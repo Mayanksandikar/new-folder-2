@@ -1,0 +1,283 @@
+
+
+.one{
+    flex-wrap: wrap;
+    animation-name: one;
+    animation-duration: 5s;
+    border: 1px solid rgb(153, 153, 238);
+    background-color: rgb(153, 153, 238);
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    animation-iteration-count: infinite;
+    
+
+    
+}
+
+@keyframes one{
+40%{
+    transform: skew(20deg)
+}
+ 
+60%{
+    transform: skew(-20deg)
+}
+}
+
+.two{
+    flex-wrap: wrap;
+    animation-name: two;
+    animation-duration: 5s;
+    border: 1px solid rgb(153, 153, 238);
+    background-color: rgb(153, 153, 238);
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    animation-iteration-count: infinite;
+    
+
+    
+}
+
+@keyframes two{
+    40%{
+        transform: skewY(20deg )
+    }
+     
+    60%{
+        transform: skewY(-20deg)
+    }
+    }
+.three{
+        flex-wrap: wrap;
+        animation-name: three;
+        animation-duration: 5s;
+        border: 1px solid rgb(153, 153, 238);
+        background-color: rgb(153, 153, 238);
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        animation-iteration-count: infinite;
+        
+}
+
+@keyframes three {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.four1{
+    flex-wrap: wrap;
+    animation-name: four1;
+    animation-duration: 5s;
+    border: 1px solid rgb(153, 153, 238);
+    background-color: rgb(153, 153, 238);
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes four1 {
+    40%{
+        transform:scaleY(0.5);
+    }
+}
+.four2{
+    flex-wrap: wrap;
+    animation-name: four2;
+    animation-duration: 5s;
+    border: 1px solid rgb(153, 153, 238);
+    background-color: rgb(153, 153, 238);
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes four2 {
+    40%{
+        transform:scaleX(0.5);
+    }
+}
+.four3{
+    flex-wrap: wrap;
+    animation-name: four3;
+    animation-duration: 5s;
+    border: 1px solid rgb(153, 153, 238);
+    background-color: rgb(153, 153, 238);
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes four3 {
+    40%{
+        transform:rotate(180deg);
+    }
+}
+
+.main{
+    border: 1px solid red;
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    transition: hight 3s, width 4s;
+}
+
+.box1:hover{
+    width: 180px;
+    transition:   5s;
+}
+.box2:hover{
+    width: 250px;
+    height: 250px;
+    transition:   4s;
+}
+.box3:hover{
+    transition:   4s;
+    width: 250px;
+   
+}
+.box4:hover{
+    width: 250px;
+    transition:   6s;
+}
+.box5:hover{
+    width: 200px;
+    transition:   4s;
+
+}
+.box6:hover{
+    width: 250px;
+    transition:   9s;
+}
+.box7:hover{
+    width: 290px;
+    transition:   4s;
+}
+
+*{
+    margin: 0;
+}
+.outer-container{
+    width: 100%;
+}
+.text{
+    font-size: 50px;
+    font-weight: 500;
+}
+.text1{
+    margin-left: 30%;
+    background-color: darkorange;
+}
+.text2{
+    margin-left: 3%;
+    background-color: white;
+}
+.text3{
+    margin-left: 3%;
+    background-color: green;
+}
+.sun{
+    background-image: url(./sun.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    margin-top: -18%;
+    margin-left: 80%;
+   animation: sun-ani 15s infinite ease-in;
+}
+@keyframes sun-ani{
+    100%{transform: translate(-100px,-100px);}
+}
+.sky{
+    background-image: url(./sky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -23%;
+    width: 100%;
+    height: 500px;
+    overflow-x: hidden;
+}
+.inner-container{
+    width: 100%;
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.buildings{
+    background-image: url(./city.png);
+    width: 200%;
+    height: 400px;
+    margin-top: -3%;
+    background-repeat: repeat-x;
+   
+    animation: build 20s infinite ease-in;
+}
+@keyframes build{
+    100%{transform: translateX(-800px);}
+}
+.road
+{
+    background-image: url(./road.jpg);
+    background-repeat: repeat-x;
+    width: 650%;
+    height: 480px;
+    margin-top: -14%;
+    animation: road 5s infinite ease-in;
+}
+@keyframes road{
+    100%{transform: translateX(-8000px);}
+}
+.car{
+    background-image: url(./car.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:800px;
+    height: 300px;
+    position: fixed;
+    top: 40%;
+    left: 21.5%;
+}
+.flag{
+    background-image: url(./indian-flag.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 46%;
+    left: 62%;
+    background-repeat: no-repeat;
+}
+.wheel1{
+    background-image: url(./wheel.png);
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    top: 68%;
+    left: 28%;
+    animation: wheel 4s infinite ease-in ;
+}
+@keyframes wheel{
+    100%{transform: rotate(360deg);}
+}
+.wheel2{
+    background-image: url(./wheel.png);
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+
+    top: 68%;
+    left: 72%;
+    animation: wheel 4s infinite ease-in;
+}

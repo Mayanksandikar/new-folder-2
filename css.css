@@ -215,7 +215,7 @@
     background-image: url(./city.png);
     width: 200%;
     height: 400px;
-    margin-top: -3%;
+    margin-top: 5%;
     background-repeat: repeat-x;
    
     animation: build 20s infinite ease-in;
@@ -229,7 +229,7 @@
     background-repeat: repeat-x;
     width: 650%;
     height: 480px;
-    margin-top: -14%;
+    margin-top: -8%;
     animation: road 5s infinite ease-in;
 }
 @keyframes road{
@@ -263,7 +263,7 @@
     height: 150px;
     position: fixed;
     top: 68%;
-    left: 28%;
+    left: 27%;
     animation: wheel 4s infinite ease-in ;
 }
 @keyframes wheel{
@@ -278,6 +278,6 @@
     position: fixed;
 
     top: 68%;
-    left: 72%;
+    left: 62%;
     animation: wheel 4s infinite ease-in;
 }
